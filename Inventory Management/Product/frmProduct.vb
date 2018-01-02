@@ -96,4 +96,8 @@ Public Class frmProduct
             End If
         Next
     End Sub
+
+    Private Sub cboCategory_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCategory.SelectedIndexChanged
+
+    End Sub
 End Class
