@@ -23,7 +23,6 @@ Partial Class frmCategory
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panel1 = New System.Windows.Forms.Panel()
-        Me.btnGetDetails = New System.Windows.Forms.Button()
         Me.btnUpdate_record = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -31,7 +30,9 @@ Partial Class frmCategory
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtCategoryName = New System.Windows.Forms.TextBox()
+        Me.txtCategoryname = New System.Windows.Forms.TextBox()
+        Me.txtctid = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -39,7 +40,6 @@ Partial Class frmCategory
         'panel1
         '
         Me.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panel1.Controls.Add(Me.btnGetDetails)
         Me.panel1.Controls.Add(Me.btnUpdate_record)
         Me.panel1.Controls.Add(Me.Label1)
         Me.panel1.Controls.Add(Me.btnSave)
@@ -47,18 +47,8 @@ Partial Class frmCategory
         Me.panel1.Controls.Add(Me.btnDelete)
         Me.panel1.Location = New System.Drawing.Point(14, 146)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(407, 61)
+        Me.panel1.Size = New System.Drawing.Size(393, 61)
         Me.panel1.TabIndex = 3
-        '
-        'btnGetDetails
-        '
-        Me.btnGetDetails.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGetDetails.Location = New System.Drawing.Point(325, 13)
-        Me.btnGetDetails.Name = "btnGetDetails"
-        Me.btnGetDetails.Size = New System.Drawing.Size(72, 31)
-        Me.btnGetDetails.TabIndex = 4
-        Me.btnGetDetails.Text = "&Get Data"
-        Me.btnGetDetails.UseVisualStyleBackColor = True
         '
         'btnUpdate_record
         '
@@ -113,8 +103,10 @@ Partial Class frmCategory
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.txtCategoryName)
+        Me.GroupBox1.Controls.Add(Me.txtctid)
+        Me.GroupBox1.Controls.Add(Me.txtCategoryname)
         Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(14, 11)
         Me.GroupBox1.Name = "GroupBox1"
@@ -133,12 +125,29 @@ Partial Class frmCategory
         Me.Label2.TabIndex = 56
         Me.Label2.Text = "Category Name"
         '
-        'txtCategoryName
+        'txtCategoryname
         '
-        Me.txtCategoryName.Location = New System.Drawing.Point(141, 77)
-        Me.txtCategoryName.Name = "txtCategoryName"
-        Me.txtCategoryName.Size = New System.Drawing.Size(252, 24)
-        Me.txtCategoryName.TabIndex = 0
+        Me.txtCategoryname.Location = New System.Drawing.Point(141, 77)
+        Me.txtCategoryname.Name = "txtCategoryname"
+        Me.txtCategoryname.Size = New System.Drawing.Size(252, 24)
+        Me.txtCategoryname.TabIndex = 0
+        '
+        'txtctid
+        '
+        Me.txtctid.Location = New System.Drawing.Point(141, 36)
+        Me.txtctid.Name = "txtctid"
+        Me.txtctid.Size = New System.Drawing.Size(252, 24)
+        Me.txtctid.TabIndex = 0
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(11, 37)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(77, 17)
+        Me.Label3.TabIndex = 56
+        Me.Label3.Text = "Category ID"
         '
         'frmCategory
         '
@@ -157,7 +166,6 @@ Partial Class frmCategory
 
     End Sub
     Public WithEvents panel1 As System.Windows.Forms.Panel
-    Private WithEvents btnGetDetails As System.Windows.Forms.Button
     Public WithEvents btnUpdate_record As System.Windows.Forms.Button
     Public WithEvents Label1 As System.Windows.Forms.Label
     Public WithEvents btnSave As System.Windows.Forms.Button
@@ -165,5 +173,7 @@ Partial Class frmCategory
     Public WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtCategoryName As System.Windows.Forms.TextBox
+    Friend WithEvents txtCategoryname As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtctid As System.Windows.Forms.TextBox
 End Class

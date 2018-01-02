@@ -12,12 +12,12 @@ Public Class frmCategory
         Try
             MysqlConn.Open()
             Dim Query As String
-            Query = "INSERT INTO tbl_category (ct_name) values ('" & txtCategoryName.Text & "')"
+            Query = "INSERT INTO tbl_category (ct_name) values ('" & txtCategoryname.Text & "')"
 
             cmd = New MySqlCommand(Query, MysqlConn)
             dr = cmd.ExecuteReader
 
-           
+
             MysqlConn.Close()
 
         Catch ex As MySqlException
@@ -32,13 +32,16 @@ Public Class frmCategory
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         CategoryRecord()
-        Me.txtCategoryName.Text = " "
-        txtCategoryName.Focus()
+        Me.txtCategoryname.Text = " "
+        txtCategoryname.Focus()
 
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        '  Dim i As Integer = 0
+        ''  Dim i As Integer = 0
+        ' For i = 0 To Me.txtCategoryname.v
+
+
 
     End Sub
 End Class

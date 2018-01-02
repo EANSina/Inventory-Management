@@ -55,49 +55,9 @@ Public Class frmProduct
     Private Sub frmProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ConnectDB()
         Category()
-
-
-
-        'If Me.Text = "frmMain" Then
-        '    Me.BackColor = Color.Transparent
-        'End If
-        lvProduct.Columns.Add("ID", 50)
-        lvProduct.Columns.Add("Product Name", 80)
-        lvProduct.Columns.Add("Category", 80)
-        lvProduct.Columns.Add("Price", 50)
-        '   lvProduct()
-
-
     End Sub
-
-
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         InsertProduct()
         Clear()
-
-        lvProduct.Columns.Add("ID", 50)
-        lvProduct.Columns.Add("Product Name", 80)
-        lvProduct.Columns.Add("Category", 80)
-        lvProduct.Columns.Add("Price", 50)
-
-
-    End Sub
-
-    Private Sub btnNewRecord_Click(sender As Object, e As EventArgs) Handles btnNewRecord.Click
-        Me.txtProductID.Text = Me.lvProduct.Items.Count + +1
-    End Sub
-
-    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        Dim i As Integer = 0
-        For i = 0 To Me.lvProduct.Items.Count
-            If lvProduct.Items(i).Selected = True Then
-                lvProduct.Items(i).Remove()
-
-            End If
-        Next
-    End Sub
-
-    Private Sub cboCategory_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCategory.SelectedIndexChanged
-
     End Sub
 End Class

@@ -23,7 +23,7 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub tsProduct_Click(sender As Object, e As EventArgs) Handles tsProduct.Click
+    Private Sub (sender As Object, e As EventArgs) Handles tsProduct.Click
         ListView1.Columns.Clear()
         ListView1.Items.Clear()
         ListView1.Columns.Add("ID", 50)
