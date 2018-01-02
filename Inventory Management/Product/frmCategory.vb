@@ -17,7 +17,6 @@ Public Class frmCategory
             cmd = New MySqlCommand(Query, MysqlConn)
             dr = cmd.ExecuteReader
 
-
             MysqlConn.Close()
 
         Catch ex As MySqlException
@@ -34,14 +33,7 @@ Public Class frmCategory
         CategoryRecord()
         Me.txtCategoryname.Text = " "
         txtCategoryname.Focus()
-
     End Sub
 
-    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        ''  Dim i As Integer = 0
-        ' For i = 0 To Me.txtCategoryname.v
 
-
-
-    End Sub
 End Class
