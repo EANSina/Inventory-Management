@@ -23,6 +23,7 @@ Partial Class frmMasageBox
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,11 +41,21 @@ Partial Class frmMasageBox
         Me.Label1.Text = "ទិន្នន័យរបស់អ្នកត្រូវបានរក្សារទុក  Your Data Is Save"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(72, 112)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(159, 31)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "OK"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmMasageBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(318, 160)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmMasageBox"
         Me.Text = "frmMasageBox"
@@ -52,4 +63,5 @@ Partial Class frmMasageBox
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

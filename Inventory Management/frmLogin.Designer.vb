@@ -115,7 +115,7 @@ Partial Class frmLogin
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.Text = "frmLogin"
-        Me.TransparencyKey = System.Drawing.SystemColors.WindowText
+        Me.TransparencyKey = System.Drawing.SystemColors.ScrollBar
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

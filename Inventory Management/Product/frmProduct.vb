@@ -57,11 +57,30 @@ Public Class frmProduct
         Category()
 
 
+
+        'If Me.Text = "frmMain" Then
+        '    Me.BackColor = Color.Transparent
+        'End If
+        lvProduct.Columns.Add("ID", 50)
+        lvProduct.Columns.Add("Product Name", 80)
+        lvProduct.Columns.Add("Category", 80)
+        lvProduct.Columns.Add("Price", 50)
+        '   lvProduct()
+
+
     End Sub
+
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         InsertProduct()
         Clear()
+
+        lvProduct.Columns.Add("ID", 50)
+        lvProduct.Columns.Add("Product Name", 80)
+        lvProduct.Columns.Add("Category", 80)
+        lvProduct.Columns.Add("Price", 50)
+
+
     End Sub
 
     Private Sub btnNewRecord_Click(sender As Object, e As EventArgs) Handles btnNewRecord.Click
