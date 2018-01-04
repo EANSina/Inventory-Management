@@ -91,6 +91,12 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventory_Managerment_Controll.Designer.vb">
+      <DependentUpon>Inventory_Managerment_Controll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_Managerment_Controll.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Invoice\frminvoice.Designer.vb">
       <DependentUpon>frminvoice.vb</DependentUpon>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory_Managerment_Controll.resx">
+      <DependentUpon>Inventory_Managerment_Controll.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoice\frminvoice.resx">
       <DependentUpon>frminvoice.vb</DependentUpon>

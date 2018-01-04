@@ -241,7 +241,7 @@ Partial Class frmRegistration
         Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "frmRegistration"
-        Me.TransparencyKey = System.Drawing.SystemColors.WindowText
+        Me.TransparencyKey = System.Drawing.SystemColors.Info
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.panel1.ResumeLayout(False)

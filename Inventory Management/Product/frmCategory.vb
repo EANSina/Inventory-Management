@@ -2,6 +2,7 @@
 Public Class frmCategory
     Public Property cmd As MySqlCommand
     Public Property dr As MySqlDataReader
+    Dim category_id As Integer = 0
 
     Sub CategoryRecord()
 
@@ -35,5 +36,12 @@ Public Class frmCategory
         txtCategoryname.Focus()
     End Sub
 
+  
+    Private Sub frmCategory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub btnNewRecord_Click(sender As Object, e As EventArgs) Handles btnNewRecord.Click
+
+    End Sub
 End Class

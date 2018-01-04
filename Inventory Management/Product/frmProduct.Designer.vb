@@ -36,7 +36,6 @@ Partial Class frmProduct
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lvProduct = New System.Windows.Forms.ListView()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -181,20 +180,11 @@ Partial Class frmProduct
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Product Details"
         '
-        'lvProduct
-        '
-        Me.lvProduct.Location = New System.Drawing.Point(20, 211)
-        Me.lvProduct.Name = "lvProduct"
-        Me.lvProduct.Size = New System.Drawing.Size(670, 250)
-        Me.lvProduct.TabIndex = 4
-        Me.lvProduct.UseCompatibleStateImageBehavior = False
-        '
         'frmProduct
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(702, 473)
-        Me.Controls.Add(Me.lvProduct)
+        Me.ClientSize = New System.Drawing.Size(702, 220)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmProduct"
@@ -219,5 +209,4 @@ Partial Class frmProduct
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents lvProduct As System.Windows.Forms.ListView
 End Class

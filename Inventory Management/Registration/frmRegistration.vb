@@ -38,4 +38,8 @@ Public Class frmRegistration
         Me.Close()
         frmMain.Show()
     End Sub
+
+    Private Sub frmRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

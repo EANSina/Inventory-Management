@@ -29,10 +29,10 @@ Partial Class frmCategory
         Me.btnNewRecord = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtCategoryname = New System.Windows.Forms.TextBox()
-        Me.txtctid = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtctid = New System.Windows.Forms.TextBox()
+        Me.txtCategoryname = New System.Windows.Forms.TextBox()
         Me.panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -115,30 +115,6 @@ Partial Class frmCategory
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Category Details"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(11, 78)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(95, 17)
-        Me.Label2.TabIndex = 56
-        Me.Label2.Text = "Category Name"
-        '
-        'txtCategoryname
-        '
-        Me.txtCategoryname.Location = New System.Drawing.Point(141, 77)
-        Me.txtCategoryname.Name = "txtCategoryname"
-        Me.txtCategoryname.Size = New System.Drawing.Size(252, 24)
-        Me.txtCategoryname.TabIndex = 0
-        '
-        'txtctid
-        '
-        Me.txtctid.Location = New System.Drawing.Point(141, 36)
-        Me.txtctid.Name = "txtctid"
-        Me.txtctid.Size = New System.Drawing.Size(252, 24)
-        Me.txtctid.TabIndex = 0
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -149,11 +125,35 @@ Partial Class frmCategory
         Me.Label3.TabIndex = 56
         Me.Label3.Text = "Category ID"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(11, 78)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(95, 17)
+        Me.Label2.TabIndex = 56
+        Me.Label2.Text = "Category Name"
+        '
+        'txtctid
+        '
+        Me.txtctid.Location = New System.Drawing.Point(141, 36)
+        Me.txtctid.Name = "txtctid"
+        Me.txtctid.Size = New System.Drawing.Size(252, 24)
+        Me.txtctid.TabIndex = 0
+        '
+        'txtCategoryname
+        '
+        Me.txtCategoryname.Location = New System.Drawing.Point(141, 77)
+        Me.txtCategoryname.Name = "txtCategoryname"
+        Me.txtCategoryname.Size = New System.Drawing.Size(252, 24)
+        Me.txtCategoryname.TabIndex = 0
+        '
         'frmCategory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(438, 224)
+        Me.ClientSize = New System.Drawing.Size(545, 336)
         Me.Controls.Add(Me.panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmCategory"
